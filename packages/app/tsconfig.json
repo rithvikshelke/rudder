@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "types": ["@cloudflare/workers-types", "@types/node", "vite/client"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@functions/*": ["functions/*"],
+      "@backend/*": ["backend/*"]
+    }
+  },
+  "include": [
+    "backend/**/*",
+    "components.d.ts",
+    "components-global.d.ts",
+    "functions/**/*",
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "documentation/**/*.md"
+  ],
+  "exclude": []
+}

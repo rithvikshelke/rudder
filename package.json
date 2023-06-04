@@ -1,0 +1,8 @@
+{
+  "name": "ionic-vue-capacitor-monorepo",
+  "private:": true,
+  "devDependencies": {
+    "tailwindcss": "^3.1.8",
+    "wrangler": "2.8.1"
+  }
+}

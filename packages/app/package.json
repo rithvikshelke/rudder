@@ -1,0 +1,49 @@
+{
+  "name": "ionic-vue-capacitor",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "wrangler:pages:dev": "wrangler pages dev --port=3090 --binding GB_CLIENT_KEY='sdk-fSc65QFa1fXMM8y' KINDE_MGMT_AUDIENCE='https://ankor-dev.au.kinde.com/api' KINDE_MGMT_TOKEN_HOST='https://ankor-dev.au.kinde.com/oauth2/token' KINDE_MGMT_CLIENT_ID='e2e7fb02463b4473ad2dfa10696506a4' KINDE_MGMT_CLIENT_SECRET='yoQlmmKZ8Ove58mU8zs05uQVDkqGuRfXOCYV6mvNmooxUwkBAjyMG' KINDE_ORG_CODE='org_cd298e35c58d' GB_DEV_MODE=true AUTH_DOMAIN='https://login.ankor.dev' KINDE_CLIENT_ID='69f331d5e5f345a4be1305fc4c9bc5c7' IS_DANGEROUSLY_USING_LOCAL_STORAGE=true ALGOLIA_APP_ID='PNX23H4BSU' PLACE_INDEX='place' ALGOLIA_WRITE_KEY='fad4f2770bb0818542fa434d9a68c58e' ALGOLIA_SEARCH_KEY='389bf58efd69fec823bc919d23f63b3e' R2_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY CF_ACCOUNT_ID='db1cbebba6c35882a03615baa5710df3' STORE_ASSETS_LOCALLY=true ASSET_BASE_PATH=http://localhost:8080 --compatibility-date=2023-02-06 --local --r2 STOWAGE --persist-to ../../wrangler-local-state/",
+    "serve:local": "yarn dev --mode .env.local & yarn wrangler:pages:dev --proxy=5300",
+    "dev": "vite --port=5300 --strictPort=true",
+    "ionic:build": "pnpm build",
+    "ionic:serve": "pnpm dev",
+    "serve": "vite preview",
+    "ios": "ionic capacitor build ios",
+    "android": "ionic capacitor build android"
+  },
+  "dependencies": {
+    "@capacitor/android": "3.5.1",
+    "@capacitor/app": "1.1.1",
+    "@capacitor/cli": "3.5.1",
+    "@capacitor/core": "3.5.1",
+    "@capacitor/haptics": "1.1.4",
+    "@capacitor/ios": "3.5.1",
+    "@capacitor/keyboard": "1.2.2",
+    "@capacitor/status-bar": "1.0.8",
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "@ionic/vue": "^6.1.4",
+    "@ionic/vue-router": "^6.1.4",
+    "@kinde-oss/kinde-auth-pkce-js": "^2.0.1",
+    "ionicons": "^7.1.2",
+    "rfc4648": "^1.5.2",
+    "vue": "^3.2.33",
+    "vue-router": "^4.1.5",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.17.10",
+    "@ionic/cli": "6.19.0",
+    "@types/node": "^17.0.31",
+    "@vitejs/plugin-vue": "^2.3.2",
+    "@vue/compiler-sfc": "3.2.33",
+    "autoprefixer": "^10.4.13",
+    "cordova-res": "0.15.4",
+    "postcss": "^8.4.18",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.8",
+    "vue-tsc": "^0.34.11"
+  }
+}

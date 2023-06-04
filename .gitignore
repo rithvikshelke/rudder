@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+tmp
+
+**/cypress/videos
+**/cypress/screenshots
+
+**/kv_miniflare
+.idea/**
+**/*.iml
+.DS_Store
+
+wrangler-local-state/
+
