@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../../../node_modules/.pnpm/@capacitor+android@3.5.1_@capacitor+core@3.5.1/node_modules/@capacitor/android/capacitor" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../node_modules/.pnpm/@capacitor+app@1.1.1_@capacitor+core@3.5.1/node_modules/@capacitor/app/android" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../node_modules/.pnpm/@capacitor+haptics@1.1.4_@capacitor+core@3.5.1/node_modules/@capacitor/haptics/android" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../node_modules/.pnpm/@capacitor+keyboard@1.2.2_@capacitor+core@3.5.1/node_modules/@capacitor/keyboard/android" />
+    <file type="web" url="file://$PROJECT_DIR$/../../../node_modules/.pnpm/@capacitor+status-bar@1.0.8_@capacitor+core@3.5.1/node_modules/@capacitor/status-bar/android" />
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="zulu-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="0" annotateissues="false">
+    <servers />
+    <columns />
   </component>
 </project>

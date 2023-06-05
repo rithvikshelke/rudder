@@ -1,6 +1,6 @@
 {
-	"appId": "com.app",
+	"appId": "com.app.yachtnoter",
 	"appName": "app",
 	"webDir": "dist",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": true
 }
